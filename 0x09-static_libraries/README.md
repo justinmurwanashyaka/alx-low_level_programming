@@ -1,0 +1,1 @@
+static library 1
