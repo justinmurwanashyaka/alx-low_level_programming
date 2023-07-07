@@ -1,15 +1,17 @@
-include "lists.h"
-
+#include "lists.h"
 /**
- * free_listint - frees all the node in a list.
- * @head: pointer to a list.
- */
+* free_listint - free
+* @head: head
+* Return: 0
+*/
 void free_listint(listint_t *head)
 {
-	if (!head)
-		return;
-	free_listint(head->next);
-	free(head);
+listint_t *b;
+
+while (head)
+{
+b = head;
+head = head->next;
+free(b);
 }
-
-
+}
