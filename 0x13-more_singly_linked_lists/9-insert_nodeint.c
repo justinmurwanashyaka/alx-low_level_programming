@@ -1,16 +1,16 @@
 #include "lists.h"
 /**
 * insert_nodeint_at_index - inserts a node to a given position in a listint
-* @head: head 
+* @head: head
 * @index: index
-* @n: value to add 
+* @n: value to add
 * Return: return
 */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int index, int n)
 {
-unsigned int a;
-listint_t *b;
-listint_t *c;
+	unsigned int a;
+	listint_t *b;
+	listint_t *c;
 
 if (*head == NULL && index != 0)
 return (NULL);
